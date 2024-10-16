@@ -1,0 +1,487 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    
+    if((n%400==0) && ((n%4==0) && (n!=100)))
+    {
+        cout<<"Its a leap year";
+    }
+    
+    else
+    {
+        cout<<"Not a leap year";
+    }
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int row=3;
+    int col=4;
+
+    if((n>=1 && n<=col) || (n%col==1 && n%4==0))
+    {
+        cout<<"Mango Tree";
+    }
+    
+    else 
+    {
+        cout<<"Apple Tree";
+    }
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a=2;
+    int b=5;
+    int c=10;
+    int delta=b^2-4*ac;
+    int root1=(-b+sqrt(delta)/2*a);
+    int root 2=(-b-sqrt(delta)/2*a);
+    
+    if(root1)
+}
+
+pattern loop
+square 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    int col=3;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=col;j++)
+        {
+            cout<<" * ";
+        }
+        cout<<"\n";
+    }
+}
+
+hallow 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    int col=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=col;j++)
+        {
+            if(i==1 || i==row || j==1|| j==col)
+            {
+                cout<<"*";
+            }
+            
+            else
+            {
+                cout<<" ";
+            }
+        }
+        
+        cout<<"\n";
+    }
+}
+
+Right triangle
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    int col=3;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+        cout<<"\n";
+    }
+}
+
+num pattern print
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int count=1;
+    int row=4;
+    int col=3;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<count<<" ";
+            count++;
+        }
+        
+        cout<<"\n";
+    }
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int count=1;
+    int row=2;
+    int col=2;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<count<<" ";
+        }
+    }
+}
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int c1=1;
+    int c2=2;
+    int row=2;
+    int col=2;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+        if(i%2==0)
+        {
+            cout<<c2<<" ";
+            c2+=2;
+        }
+        
+        else
+        {
+            cout<<c1;
+            c1+=2;
+        }
+        }
+    
+    cout<<"\n";
+    }
+}
+
+mirror of right anglle..... cout la * pakaam place vitta triangle varum.
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+join the 2 triangle
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            cout<<"*";
+        }
+        
+        for(int k=1;k<=2*(row-i);k++)
+        {
+            cout<<" ";
+        }
+        
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+buterfly 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int h=1;h<=i;h++)
+        {
+            cout<<"*";
+        }
+        
+        for(int s=1;s<=2*(row-i);s++)
+        {
+            cout<<" ";
+        }
+        
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<"\n";
+    }
+    for(int i=row-1;i>=1;i--)
+    {
+        for(int s=1;s<=i;s++)
+        {
+            cout<<"*";
+        }
+        
+        for(int k=1;k<=2*(row-i);k++)
+        {
+            cout<<" ";
+        }
+        
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+rhombus
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int j=1;j<=row-i;j++)
+        {
+            cout<<" ";
+        }
+        
+        for(int k=1;k<=row;k++)
+        {
+            cout<<"*";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+triangle
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+reverse the triangle
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=row;i>=1;i--)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+diamond
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=4;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+        
+        cout<<"\n";
+    }
+     for(int i=row-1;i>=1;i--)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+        
+        cout<<"\n";
+    }
+}
+
+pramid
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=5;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=2*i-1;j++)
+        {
+          if(j==1 || j==2*i-1 || i==row)
+          {
+            cout<<"*";
+          }
+          else{
+              cout<<" ";
+          }
+        }
+        cout<<"\n";
+    }
+}
+
+hallow pramid
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int row=5;
+    
+    for(int i=1;i<=row;i++)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=2*i-1;j++)
+        {
+          if(j==1 || j==2*i-1 )
+          {
+            cout<<"*";
+          }
+          else{
+              cout<<" ";
+          }
+        }
+        cout<<"\n";
+    }
+    
+    for(int i=row-1;i>=1;i--)
+    {
+        for(int k=1;k<=row-i;k++)
+        {
+            cout<<" ";
+        }
+        
+        for(int j=1;j<=2*i-1;j++)
+        {
+          if(j==1 || j==2*i-1)
+          {
+            cout<<"*";
+          }
+          else
+          {
+              cout<<" ";
+          }
+        }
+        cout<<"\n";
+    }
+}
