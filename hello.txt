@@ -1,1 +1,2 @@
 This is a text added for branching workout.
+This is new one.
